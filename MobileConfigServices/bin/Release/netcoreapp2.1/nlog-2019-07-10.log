@@ -1,0 +1,14 @@
+2019-07-10 12:50:24.1526|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/  
+2019-07-10 12:50:24.3277|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller MobileConfigServices.Controllers.DefaultController (MobileConfigServices).
+2019-07-10 12:50:24.3436|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) - Validation state: Valid
+2019-07-10 12:50:24.3548|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.3183ms.
+2019-07-10 12:50:24.3548|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2019-07-10 12:50:24.3718|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) in 36.1416ms
+2019-07-10 12:50:24.3801|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 233.8154ms 200 text/plain; charset=utf-8
+2019-07-10 12:56:59.6067|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/  
+2019-07-10 12:56:59.7694|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller MobileConfigServices.Controllers.DefaultController (MobileConfigServices).
+2019-07-10 12:56:59.7840|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) - Validation state: Valid
+2019-07-10 12:56:59.7915|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.253ms.
+2019-07-10 12:56:59.8028|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2019-07-10 12:56:59.8028|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) in 32.5875ms
+2019-07-10 12:56:59.8175|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 217.7851ms 200 text/plain; charset=utf-8

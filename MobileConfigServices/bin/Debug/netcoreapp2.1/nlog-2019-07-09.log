@@ -1,0 +1,17 @@
+2019-07-09 16:44:11.1463|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/  
+2019-07-09 16:44:11.1459|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57900/  0
+2019-07-09 16:44:11.2927|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 160.2478ms 200 
+2019-07-09 16:44:11.4529|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 325.8555ms 404 text/plain
+2019-07-09 16:44:15.3521|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/locations/0009  
+2019-07-09 16:44:15.4109|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-09 16:44:15.5502|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-09 16:44:15.8270|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-09 16:44:16.0081|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-09 16:44:16.0315|INFO|MobileConfigServices.Controllers.LocationsController|Location 0009 was not found.
+2019-07-09 16:44:16.0315|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 481.4428ms.
+2019-07-09 16:44:16.0580|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2019-07-09 16:44:16.0704|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 645.9479ms
+2019-07-09 16:44:16.0962|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 733.3982ms 404 text/plain

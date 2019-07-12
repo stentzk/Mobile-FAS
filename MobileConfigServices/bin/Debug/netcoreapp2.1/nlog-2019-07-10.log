@@ -1,0 +1,818 @@
+2019-07-10 08:24:12.2221|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57900/  0
+2019-07-10 08:24:12.2221|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/  
+2019-07-10 08:24:12.3548|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 144.0278ms 200 
+2019-07-10 08:24:12.5390|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 323.0129ms 404 text/plain
+2019-07-10 08:24:15.7565|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/locations/0001  
+2019-07-10 08:24:15.8035|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 08:24:15.9494|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 08:24:16.1903|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 08:24:16.4275|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 08:24:16.5367|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 578.6544ms.
+2019-07-10 08:24:16.5546|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'MobileConfigServices.Models.LocationDto'.
+2019-07-10 08:24:16.6311|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 815.1495ms
+2019-07-10 08:24:16.6524|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 884.9482ms 200 application/json; charset=utf-8
+2019-07-10 08:24:23.1450|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/locations/0009  
+2019-07-10 08:24:23.1450|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 08:24:23.1581|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 08:24:23.1581|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 08:24:23.1833|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 08:24:23.1913|INFO|MobileConfigServices.Controllers.LocationsController|Location 0009 was not found.
+2019-07-10 08:24:23.1913|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 33.2446ms.
+2019-07-10 08:24:23.2063|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2019-07-10 08:24:23.2063|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 54.8657ms
+2019-07-10 08:24:23.2209|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 74.8574ms 404 text/plain
+2019-07-10 08:27:12.5767|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57900/  0
+2019-07-10 08:27:12.5785|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/  
+2019-07-10 08:27:12.6990|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 133.5862ms 200 
+2019-07-10 08:27:12.8514|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 286.2681ms 404 text/plain
+2019-07-10 08:27:18.0993|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/locations/0002  
+2019-07-10 08:27:18.1478|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 08:27:18.2921|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 08:27:18.5237|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 08:27:18.7222|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 08:27:18.8055|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 501.6242ms.
+2019-07-10 08:27:18.8261|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'MobileConfigServices.Models.LocationDto'.
+2019-07-10 08:27:18.8841|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 722.2874ms
+2019-07-10 08:27:18.8841|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 798.1236ms 200 application/json; charset=utf-8
+2019-07-10 08:27:55.8274|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/  
+2019-07-10 08:27:55.8274|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57900/  0
+2019-07-10 08:27:55.9574|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 140.0358ms 200 
+2019-07-10 08:27:56.1123|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 283.73ms 404 text/plain
+2019-07-10 08:28:03.2770|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/locations/0002  
+2019-07-10 08:28:03.3255|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 08:28:03.4741|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 08:28:03.7090|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 08:29:04.6915|ERROR|Microsoft.EntityFrameworkCore.Database.Connection|An error occurred using the connection to database 'fasprcsqlserver/fasprcsql' on server 'fasprcsqlserver.database.windows.net'.
+2019-07-10 08:29:04.7356|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred in the database while iterating the results of a query for context type 'MobileConfigServices.Entities.RoutebookPTContext'.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No connection could be made because the target machine actively refused it.) ---> System.ComponentModel.Win32Exception (10061): No connection could be made because the target machine actively refused it
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:10061,State:0,Class:20
+2019-07-10 08:29:04.7681|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred in the database while iterating the results of a query for context type 'MobileConfigServices.Entities.RoutebookPTContext'.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No connection could be made because the target machine actively refused it.) ---> System.ComponentModel.Win32Exception (10061): No connection could be made because the target machine actively refused it
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:10061,State:0,Class:20
+2019-07-10 08:29:04.8938|FATAL|MobileConfigServices.Controllers.LocationsController|Exception while getting location 0002.
+2019-07-10 08:29:04.9154|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 61419.3095ms.
+2019-07-10 08:29:04.9381|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2019-07-10 08:29:04.9533|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 61607.2645ms
+2019-07-10 08:29:04.9533|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 61684.3833ms 500 text/plain; charset=utf-8
+2019-07-10 10:42:46.1055|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57900/  0
+2019-07-10 10:42:46.1055|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/  
+2019-07-10 10:42:46.2576|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 178.3527ms 200 
+2019-07-10 10:42:46.4306|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller MobileConfigServices.Controllers.DefaultController (MobileConfigServices).
+2019-07-10 10:42:46.4519|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) - Validation state: Valid
+2019-07-10 10:42:46.4645|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkResult in 0.3938ms.
+2019-07-10 10:42:46.4800|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2019-07-10 10:42:46.4800|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) in 45.8492ms
+2019-07-10 10:42:46.5123|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 429.4781ms 200 
+2019-07-10 12:51:17.3791|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/  
+2019-07-10 12:51:17.3791|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57900/  0
+2019-07-10 12:51:17.4986|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 127.2409ms 200 
+2019-07-10 12:51:17.6717|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller MobileConfigServices.Controllers.DefaultController (MobileConfigServices).
+2019-07-10 12:51:17.6972|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) - Validation state: Valid
+2019-07-10 12:51:17.7127|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.3581ms.
+2019-07-10 12:51:17.7314|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2019-07-10 12:51:17.7454|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) in 57.9337ms
+2019-07-10 12:51:17.8316|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 433.6463ms 200 text/plain; charset=utf-8
+2019-07-10 12:51:38.4240|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/locations/0001  
+2019-07-10 12:51:38.4461|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 12:51:38.5797|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 12:51:38.5915|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 12:51:38.8680|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 12:52:09.8140|ERROR|Microsoft.EntityFrameworkCore.Database.Connection|An error occurred using the connection to database 'fasprcsql' on server 'fasprcsqlserver.database.windows.net'.
+2019-07-10 12:52:09.8614|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred in the database while iterating the results of a query for context type 'MobileConfigServices.Entities.RoutebookPTContext'.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No connection could be made because the target machine actively refused it.) ---> System.ComponentModel.Win32Exception (10061): No connection could be made because the target machine actively refused it
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:10061,State:0,Class:20
+2019-07-10 12:52:09.9051|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred in the database while iterating the results of a query for context type 'MobileConfigServices.Entities.RoutebookPTContext'.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No connection could be made because the target machine actively refused it.) ---> System.ComponentModel.Win32Exception (10061): No connection could be made because the target machine actively refused it
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:10061,State:0,Class:20
+2019-07-10 12:52:09.9964|FATAL|MobileConfigServices.Controllers.LocationsController|Exception while getting location 0001. A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No connection could be made because the target machine actively refused it.)
+2019-07-10 12:52:09.9964|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 31414.5199ms.
+2019-07-10 12:52:10.0137|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2019-07-10 12:52:10.0276|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 31565.8613ms
+2019-07-10 12:52:10.0276|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 31613.5128ms 500 text/plain; charset=utf-8
+2019-07-10 12:56:18.9241|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57900/  0
+2019-07-10 12:56:18.9241|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/  
+2019-07-10 12:56:19.0508|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 136.396ms 200 
+2019-07-10 12:56:19.2525|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller MobileConfigServices.Controllers.DefaultController (MobileConfigServices).
+2019-07-10 12:56:19.2763|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) - Validation state: Valid
+2019-07-10 12:56:19.2880|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.3147ms.
+2019-07-10 12:56:19.3061|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2019-07-10 12:56:19.3169|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) in 50.7857ms
+2019-07-10 12:56:19.3316|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 416.2167ms 200 text/plain; charset=utf-8
+2019-07-10 13:39:38.7621|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57900/  0
+2019-07-10 13:39:38.7631|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/  
+2019-07-10 13:39:38.8944|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 175.8642ms 200 
+2019-07-10 13:39:39.0774|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller MobileConfigServices.Controllers.DefaultController (MobileConfigServices).
+2019-07-10 13:39:39.1000|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) - Validation state: Valid
+2019-07-10 13:39:39.1182|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.8917ms.
+2019-07-10 13:39:39.1346|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2019-07-10 13:39:39.1346|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) in 55.61ms
+2019-07-10 13:39:39.1938|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 441.6417ms 200 text/plain; charset=utf-8
+2019-07-10 13:39:51.5841|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/locationStatus/0001  
+2019-07-10 13:39:51.5924|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 8.6299ms 404 text/plain
+2019-07-10 13:40:00.5513|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/locations/0001  
+2019-07-10 13:40:00.5813|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 13:40:00.7320|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 13:40:00.7444|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 13:40:01.0796|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 13:40:01.3267|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 13:40:01.4319|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 686.0695ms.
+2019-07-10 13:40:01.4496|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'MobileConfigServices.Models.LocationDto'.
+2019-07-10 13:40:01.5230|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 930.4032ms
+2019-07-10 13:40:01.5382|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 985.157ms 200 application/json; charset=utf-8
+2019-07-10 13:40:08.3043|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/locations  
+2019-07-10 13:40:08.3164|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocations", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocations() on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 13:40:08.3264|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocations (MobileConfigServices) - Validation state: Valid
+2019-07-10 13:40:11.5790|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 13:40:11.6028|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+ORDER BY [c].[locationNumber]
+2019-07-10 13:40:11.6372|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocations (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3301.3769ms.
+2019-07-10 13:40:11.6372|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MobileConfigServices.Models.LocationDto, MobileConfigServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-10 13:40:11.6539|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocations (MobileConfigServices) in 3326.9018ms
+2019-07-10 13:40:11.6539|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3356.856ms 200 application/json; charset=utf-8
+2019-07-10 13:42:16.2752|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/  
+2019-07-10 13:42:16.2752|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57900/  0
+2019-07-10 13:42:16.4616|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 190.8858ms 200 
+2019-07-10 13:42:16.8140|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller MobileConfigServices.Controllers.DefaultController (MobileConfigServices).
+2019-07-10 13:42:16.8548|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) - Validation state: Valid
+2019-07-10 13:42:16.8747|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.3686ms.
+2019-07-10 13:42:16.9072|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2019-07-10 13:42:16.9231|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) in 87.3602ms
+2019-07-10 13:42:16.9581|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 680.2493ms 200 text/plain; charset=utf-8
+2019-07-10 13:42:22.0819|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/locations  
+2019-07-10 13:42:22.0819|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocations", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocations() on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 13:42:22.2085|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocations (MobileConfigServices) - Validation state: Valid
+2019-07-10 13:42:26.4057|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 13:42:26.6363|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+ORDER BY [c].[locationNumber]
+2019-07-10 13:42:26.7718|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocations (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4553.9588ms.
+2019-07-10 13:42:26.7850|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MobileConfigServices.Models.LocationDto, MobileConfigServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-10 13:42:26.8643|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocations (MobileConfigServices) in 4763.6106ms
+2019-07-10 13:42:26.9039|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4796.4498ms 200 application/json; charset=utf-8
+2019-07-10 14:28:57.3763|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/  
+2019-07-10 14:28:57.3763|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57900/  0
+2019-07-10 14:28:57.4933|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 127.107ms 200 
+2019-07-10 14:28:57.6789|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller MobileConfigServices.Controllers.DefaultController (MobileConfigServices).
+2019-07-10 14:28:57.7068|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) - Validation state: Valid
+2019-07-10 14:28:57.7206|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.3953ms.
+2019-07-10 14:28:57.7384|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2019-07-10 14:28:57.7552|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) in 58.2222ms
+2019-07-10 14:28:57.7884|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 408.3741ms 200 text/plain; charset=utf-8
+2019-07-10 14:29:19.9234|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001  
+2019-07-10 14:29:19.9654|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 14:29:20.1026|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 14:29:23.1515|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 14:29:23.4173|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 14:29:23.6029|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 14:29:23.6791|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3564.1156ms.
+2019-07-10 14:29:23.6891|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'MobileConfigServices.Models.LocationDto'.
+2019-07-10 14:29:23.7446|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 3766.8697ms
+2019-07-10 14:29:23.7547|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3831.8438ms 200 application/json; charset=utf-8
+2019-07-10 14:29:47.3099|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001?appName=RENTAL  
+2019-07-10 14:29:47.3228|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 14:29:47.3447|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 14:29:52.2084|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 14:29:52.2236|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 14:29:52.2396|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 14:29:52.2518|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4893.2088ms.
+2019-07-10 14:29:52.2518|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'MobileConfigServices.Models.LocationDto'.
+2019-07-10 14:29:52.2669|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 4931.6096ms
+2019-07-10 14:29:52.2825|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4962.9733ms 200 application/json; charset=utf-8
+2019-07-10 14:30:10.3751|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001  
+2019-07-10 14:30:10.3751|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 14:30:10.3940|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 14:30:17.7160|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 14:30:17.7263|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 14:30:17.7390|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 14:30:17.7505|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 7348.7577ms.
+2019-07-10 14:30:17.7505|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'MobileConfigServices.Models.LocationDto'.
+2019-07-10 14:30:17.7505|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 7369.6841ms
+2019-07-10 14:30:17.7731|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7400.8932ms 200 application/json; charset=utf-8
+2019-07-10 14:46:21.9572|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57900/  0
+2019-07-10 14:46:21.9572|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/  
+2019-07-10 14:46:22.1786|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 226.7269ms 200 
+2019-07-10 14:46:22.4540|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller MobileConfigServices.Controllers.DefaultController (MobileConfigServices).
+2019-07-10 14:46:22.4876|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) - Validation state: Valid
+2019-07-10 14:46:22.5042|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.388ms.
+2019-07-10 14:46:22.5250|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2019-07-10 14:46:22.5411|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) in 66.5819ms
+2019-07-10 14:46:22.5732|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 619.1251ms 200 text/plain; charset=utf-8
+2019-07-10 14:46:31.2791|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001  
+2019-07-10 14:46:31.3021|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 14:46:31.4377|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 14:46:31.4452|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 14:46:31.6836|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 14:46:31.8835|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 14:46:32.0419|FATAL|MobileConfigServices.Controllers.LocationsController|Exception while getting location 0001. Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> LocationDto
+System.Collections.Generic.List`1[[MobileConfigServices.Entities.CfgLocation, MobileConfigServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> MobileConfigServices.Models.LocationDto
+2019-07-10 14:46:32.0514|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 607.5708ms.
+2019-07-10 14:46:32.0514|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2019-07-10 14:46:32.0720|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 762.5239ms
+2019-07-10 14:46:32.0720|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 802.3863ms 500 text/plain; charset=utf-8
+2019-07-10 14:46:53.3687|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001  
+2019-07-10 14:46:53.3811|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 14:46:53.3811|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 14:46:56.3335|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 14:47:06.7624|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 14:47:06.7777|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 14:48:18.6944|FATAL|MobileConfigServices.Controllers.LocationsController|Exception while getting location 0001. Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> LocationDto
+System.Collections.Generic.List`1[[MobileConfigServices.Entities.CfgLocation, MobileConfigServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> MobileConfigServices.Models.LocationDto
+2019-07-10 14:48:18.7168|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 85307.1114ms.
+2019-07-10 14:48:18.7335|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2019-07-10 14:48:18.7464|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 85351.9205ms
+2019-07-10 14:48:18.7587|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 85386.7151ms 500 text/plain; charset=utf-8
+2019-07-10 14:48:22.0458|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001  
+2019-07-10 14:48:22.0580|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 14:48:22.0580|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 14:53:09.0837|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57900/  0
+2019-07-10 14:53:09.0837|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/  
+2019-07-10 14:53:09.2107|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 163.8004ms 200 
+2019-07-10 14:53:09.4024|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller MobileConfigServices.Controllers.DefaultController (MobileConfigServices).
+2019-07-10 14:53:09.4252|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) - Validation state: Valid
+2019-07-10 14:53:09.4406|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.3234ms.
+2019-07-10 14:53:09.4690|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2019-07-10 14:53:09.4815|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) in 66.0692ms
+2019-07-10 14:53:09.4966|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 447.2165ms 200 text/plain; charset=utf-8
+2019-07-10 14:53:12.7017|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001  
+2019-07-10 14:53:12.7204|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 14:53:12.8531|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 14:53:15.1727|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 14:53:15.4234|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 14:53:15.6179|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 14:53:15.7050|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2846.5759ms.
+2019-07-10 14:53:15.7143|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MobileConfigServices.Models.LocationDto, MobileConfigServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-10 14:53:15.7677|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 3041.6627ms
+2019-07-10 14:53:15.7784|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3077.6359ms 200 application/json; charset=utf-8
+2019-07-10 14:53:29.1541|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001?appName=RENTAL  
+2019-07-10 14:53:29.1646|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 14:53:29.1763|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 14:53:31.1034|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 14:53:31.1034|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 14:53:31.1235|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 14:53:31.1533|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__appName_0='?' (Size = 10) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[appId], [c].[appDescription], [c].[appName], [c].[updatedDate]
+FROM [cfgApplication] AS [c]
+WHERE @__appName_0 = [c].[appName]
+2019-07-10 14:53:31.2496|FATAL|MobileConfigServices.Controllers.LocationsController|Exception while getting location 0001. Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> LocationDto
+System.Collections.Generic.List`1[[MobileConfigServices.Entities.CfgLocation, MobileConfigServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> MobileConfigServices.Models.LocationDto
+2019-07-10 14:53:31.2561|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2069.1058ms.
+2019-07-10 14:53:31.2561|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2019-07-10 14:53:31.2561|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 2094.4345ms
+2019-07-10 14:53:31.2871|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2120.5776ms 500 text/plain; charset=utf-8
+2019-07-10 14:53:36.1415|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001?appName=RENTAL  
+2019-07-10 14:53:36.1601|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 14:53:36.1728|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 14:53:41.6823|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 14:53:43.2026|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 14:53:43.2176|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 14:53:58.9387|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__appName_0='?' (Size = 10) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[appId], [c].[appDescription], [c].[appName], [c].[updatedDate]
+FROM [cfgApplication] AS [c]
+WHERE @__appName_0 = [c].[appName]
+2019-07-10 14:55:17.3511|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/  
+2019-07-10 14:55:17.3511|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57900/  0
+2019-07-10 14:55:17.4759|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 136.9105ms 200 
+2019-07-10 14:55:17.6457|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller MobileConfigServices.Controllers.DefaultController (MobileConfigServices).
+2019-07-10 14:55:17.6772|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) - Validation state: Valid
+2019-07-10 14:55:17.6912|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.412ms.
+2019-07-10 14:55:17.7112|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2019-07-10 14:55:17.7231|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) in 58.8946ms
+2019-07-10 14:55:17.7564|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 400.2397ms 200 text/plain; charset=utf-8
+2019-07-10 14:55:31.2719|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001  
+2019-07-10 14:55:31.2910|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 14:55:31.4302|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 14:55:33.9239|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 14:55:34.1861|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 14:55:34.4371|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (26ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 14:55:34.5846|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3143.1246ms.
+2019-07-10 14:55:34.6051|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MobileConfigServices.Models.LocationDto, MobileConfigServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-10 14:55:34.6699|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 3372.332ms
+2019-07-10 14:55:34.6699|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3407.6356ms 200 application/json; charset=utf-8
+2019-07-10 14:55:40.8923|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001?appName=RENTAL  
+2019-07-10 14:55:40.8923|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 14:55:40.9106|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 14:55:43.5529|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 14:55:44.5353|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 14:55:44.5511|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 14:55:48.0525|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__appName_0='?' (Size = 10) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[appId], [c].[appDescription], [c].[appName], [c].[updatedDate]
+FROM [cfgApplication] AS [c]
+WHERE @__appName_0 = [c].[appName]
+2019-07-10 14:56:03.0138|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 22092.9284ms.
+2019-07-10 14:56:03.0138|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'MobileConfigServices.Models.LocationDto'.
+2019-07-10 14:56:03.0387|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 22128.5329ms
+2019-07-10 14:56:03.0488|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 22154.9228ms 200 application/json; charset=utf-8
+2019-07-10 14:56:17.3517|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001?appName=DYNAMICS  
+2019-07-10 14:56:17.3597|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 14:56:17.3597|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 14:56:20.7317|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 14:56:20.7317|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 14:56:20.7548|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 14:56:20.7772|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[@__appName_0='?' (Size = 10) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[appId], [c].[appDescription], [c].[appName], [c].[updatedDate]
+FROM [cfgApplication] AS [c]
+WHERE @__appName_0 = [c].[appName]
+2019-07-10 14:56:20.7772|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3417.046ms.
+2019-07-10 14:56:20.7965|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'MobileConfigServices.Models.LocationDto'.
+2019-07-10 14:56:20.7965|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 3436.7263ms
+2019-07-10 14:56:20.8194|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3460.5785ms 200 application/json; charset=utf-8
+2019-07-10 14:56:50.6592|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001  
+2019-07-10 14:56:50.6701|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 14:56:50.6701|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 14:56:50.6881|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 14:56:50.6881|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 14:56:50.7032|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 14:56:50.7032|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 22.7752ms.
+2019-07-10 14:56:50.7186|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MobileConfigServices.Models.LocationDto, MobileConfigServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-10 14:56:50.7186|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 46.8961ms
+2019-07-10 14:56:50.7362|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 82.4463ms 200 application/json; charset=utf-8
+2019-07-10 14:57:05.8659|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001?appName=DYNAMICS  
+2019-07-10 14:57:05.8783|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 14:57:05.8886|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 14:57:05.8886|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 14:57:05.9044|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 14:57:05.9044|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 14:57:05.9203|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__appName_0='?' (Size = 10) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[appId], [c].[appDescription], [c].[appName], [c].[updatedDate]
+FROM [cfgApplication] AS [c]
+WHERE @__appName_0 = [c].[appName]
+2019-07-10 14:57:05.9203|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 27.0583ms.
+2019-07-10 14:57:05.9203|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'MobileConfigServices.Models.LocationDto'.
+2019-07-10 14:57:05.9367|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 53.0332ms
+2019-07-10 14:57:05.9367|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 78.0677ms 200 application/json; charset=utf-8
+2019-07-10 14:57:44.6204|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001?appName=DYNAMIC  
+2019-07-10 14:57:44.6367|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 14:57:44.6442|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 14:57:44.6594|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 14:57:44.6750|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 14:57:44.6750|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 14:57:44.6936|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__appName_0='?' (Size = 10) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[appId], [c].[appDescription], [c].[appName], [c].[updatedDate]
+FROM [cfgApplication] AS [c]
+WHERE @__appName_0 = [c].[appName]
+2019-07-10 14:57:44.7082|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 47.5912ms.
+2019-07-10 14:57:44.7082|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2019-07-10 14:57:44.7253|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 79.8717ms
+2019-07-10 14:57:44.7390|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 110.855ms 404 text/plain; charset=utf-8
+2019-07-10 14:58:35.3611|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57900/  0
+2019-07-10 14:58:35.3611|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/  
+2019-07-10 14:58:35.4921|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 152.9065ms 200 
+2019-07-10 14:58:35.6758|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller MobileConfigServices.Controllers.DefaultController (MobileConfigServices).
+2019-07-10 14:58:35.7155|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) - Validation state: Valid
+2019-07-10 14:58:35.7295|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.4693ms.
+2019-07-10 14:58:35.7473|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2019-07-10 14:58:35.7603|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) in 61.8667ms
+2019-07-10 14:58:35.7806|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 433.3582ms 200 text/plain; charset=utf-8
+2019-07-10 14:58:41.6256|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001?appName=DYNAMIC  
+2019-07-10 14:58:41.6432|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 14:58:41.7828|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 14:58:41.7828|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 14:58:42.0148|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 14:58:42.2023|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 14:58:42.2796|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__appName_0='?' (Size = 10) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[appId], [c].[appDescription], [c].[appName], [c].[updatedDate]
+FROM [cfgApplication] AS [c]
+WHERE @__appName_0 = [c].[appName]
+2019-07-10 14:58:42.2908|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 502.3656ms.
+2019-07-10 14:58:42.3004|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2019-07-10 14:58:42.3004|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 660.9837ms
+2019-07-10 14:58:42.3286|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 691.7081ms 404 text/plain; charset=utf-8
+2019-07-10 14:58:52.0883|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001?appName=DYNAMICS  
+2019-07-10 14:58:52.1037|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 14:58:52.1037|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 14:58:52.1186|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 14:58:52.1320|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 14:58:52.1595|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (19ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 14:58:52.1595|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__appName_0='?' (Size = 10) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[appId], [c].[appDescription], [c].[appName], [c].[updatedDate]
+FROM [cfgApplication] AS [c]
+WHERE @__appName_0 = [c].[appName]
+2019-07-10 14:58:52.2102|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 92.5616ms.
+2019-07-10 14:58:52.2102|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'MobileConfigServices.Models.LocationDto'.
+2019-07-10 14:58:52.2712|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 161.1748ms
+2019-07-10 14:58:52.2712|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 191.0364ms 200 application/json; charset=utf-8
+2019-07-10 15:00:50.5193|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001  
+2019-07-10 15:00:50.5367|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 15:00:50.5487|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 15:00:50.5575|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 15:00:50.5697|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 15:00:50.5697|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 15:00:50.6038|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 45.5035ms.
+2019-07-10 15:00:50.6038|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MobileConfigServices.Models.LocationDto, MobileConfigServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-10 15:00:50.6188|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 69.6627ms
+2019-07-10 15:00:50.6188|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 107.2338ms 200 application/json; charset=utf-8
+2019-07-10 15:43:13.1378|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57900/  0
+2019-07-10 15:43:13.1378|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/  
+2019-07-10 15:43:13.2725|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 142.7048ms 200 
+2019-07-10 15:43:13.4894|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller MobileConfigServices.Controllers.DefaultController (MobileConfigServices).
+2019-07-10 15:43:13.5241|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) - Validation state: Valid
+2019-07-10 15:43:13.5441|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.4901ms.
+2019-07-10 15:43:13.5722|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2019-07-10 15:43:13.5919|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) in 79.2091ms
+2019-07-10 15:43:13.6125|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 477.263ms 200 text/plain; charset=utf-8
+2019-07-10 15:43:25.7020|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001  
+2019-07-10 15:43:25.7205|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 15:43:25.8595|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 15:43:27.8587|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 15:43:29.2628|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 15:43:29.4597|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 15:43:35.9808|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10115.1056ms.
+2019-07-10 15:43:35.9808|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MobileConfigServices.Models.LocationDto, MobileConfigServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-10 15:43:36.0615|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 10332.5506ms
+2019-07-10 15:43:36.0729|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 10369.8169ms 200 application/json; charset=utf-8
+2019-07-10 15:43:44.3682|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001?appName=RENTAL  
+2019-07-10 15:43:44.3802|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 15:43:44.3944|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 15:43:50.4772|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 15:43:51.6414|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 15:43:51.6627|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 15:43:55.7269|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__appName_0='?' (Size = 10) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[appId], [c].[appDescription], [c].[appName], [c].[updatedDate]
+FROM [cfgApplication] AS [c]
+WHERE @__appName_0 = [c].[appName]
+2019-07-10 15:44:27.2856|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 42865.6074ms.
+2019-07-10 15:44:27.2952|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'MobileConfigServices.Models.ResponseDto`1[[MobileConfigServices.Models.LocationDto, MobileConfigServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-10 15:44:27.3173|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 42921.2117ms
+2019-07-10 15:44:27.3306|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 42959.6022ms 200 application/json; charset=utf-8
+2019-07-10 16:21:57.7800|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001  
+2019-07-10 16:21:57.8160|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 16:21:57.8387|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 16:22:02.3861|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 16:22:02.3976|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 16:22:02.4245|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 16:22:02.4373|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4586.8344ms.
+2019-07-10 16:22:02.4472|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[MobileConfigServices.Models.LocationDto, MobileConfigServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-10 16:22:02.4585|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 4619.2494ms
+2019-07-10 16:22:02.4585|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4685.5517ms 200 application/json; charset=utf-8
+2019-07-10 16:23:02.3964|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001?appName=RENTAL  
+2019-07-10 16:23:02.4086|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 16:23:02.4190|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 16:23:04.3932|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 16:23:05.0144|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 16:23:05.0306|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 16:23:07.3251|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__appName_0='?' (Size = 10) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[appId], [c].[appDescription], [c].[appName], [c].[updatedDate]
+FROM [cfgApplication] AS [c]
+WHERE @__appName_0 = [c].[appName]
+2019-07-10 16:23:19.6228|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 17189.7308ms.
+2019-07-10 16:23:19.6334|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'MobileConfigServices.Models.ResponseDto`1[[MobileConfigServices.Models.LocationDto, MobileConfigServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-10 16:23:19.6514|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 17233.2141ms
+2019-07-10 16:23:19.6641|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 17267.6643ms 200 application/json; charset=utf-8
+2019-07-10 16:24:07.8398|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/  
+2019-07-10 16:24:07.8398|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57900/  0
+2019-07-10 16:24:08.0064|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 175.9094ms 200 
+2019-07-10 16:24:08.1895|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller MobileConfigServices.Controllers.DefaultController (MobileConfigServices).
+2019-07-10 16:24:08.2162|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) - Validation state: Valid
+2019-07-10 16:24:08.2310|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.3832ms.
+2019-07-10 16:24:08.2469|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2019-07-10 16:24:08.2469|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) in 52.8585ms
+2019-07-10 16:24:08.2744|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 443.5625ms 200 text/plain; charset=utf-8
+2019-07-10 16:24:09.9037|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001?appName=RENTAL  
+2019-07-10 16:24:09.9225|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 16:24:10.0602|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 16:24:12.8066|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 16:24:13.0564|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 16:24:13.2534|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 16:24:13.3465|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__appName_0='?' (Size = 10) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[appId], [c].[appDescription], [c].[appName], [c].[updatedDate]
+FROM [cfgApplication] AS [c]
+WHERE @__appName_0 = [c].[appName]
+2019-07-10 16:24:13.3870|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3321.0637ms.
+2019-07-10 16:24:13.3870|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'MobileConfigServices.Models.ResponseDto`1[[MobileConfigServices.Models.LocationDto, MobileConfigServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-10 16:24:13.4634|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 3533.9718ms
+2019-07-10 16:24:13.4634|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3571.2639ms 200 application/json; charset=utf-8
+2019-07-10 16:24:23.2141|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001  
+2019-07-10 16:24:23.2141|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 16:24:23.2369|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 16:24:25.5675|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 16:24:25.5864|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 16:24:25.5987|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 16:24:25.6443|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2397.1276ms.
+2019-07-10 16:24:25.6533|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'MobileConfigServices.Models.ResponseDto`1[[MobileConfigServices.Models.LocationDto, MobileConfigServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-10 16:24:25.6533|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 2424.9948ms
+2019-07-10 16:24:25.6775|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2455.7214ms 200 application/json; charset=utf-8
+2019-07-10 16:26:25.9887|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57900/  0
+2019-07-10 16:26:25.9887|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/  
+2019-07-10 16:26:26.1177|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 136.2005ms 200 
+2019-07-10 16:26:26.3821|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller MobileConfigServices.Controllers.DefaultController (MobileConfigServices).
+2019-07-10 16:26:26.4149|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) - Validation state: Valid
+2019-07-10 16:26:26.4341|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.3796ms.
+2019-07-10 16:26:26.4640|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2019-07-10 16:26:26.4789|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) in 77.948ms
+2019-07-10 16:26:26.5100|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 513.1942ms 200 text/plain; charset=utf-8
+2019-07-10 16:26:26.7118|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001  
+2019-07-10 16:26:26.7297|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 16:26:26.8595|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 16:26:29.5973|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 16:26:29.8419|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 16:26:30.0267|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 16:26:30.1348|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3269.3349ms.
+2019-07-10 16:26:30.1458|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'MobileConfigServices.Models.ResponseDto`1[[System.Collections.Generic.List`1[[MobileConfigServices.Models.LocationDto, MobileConfigServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-07-10 16:26:30.1980|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 3461.4912ms
+2019-07-10 16:26:30.2083|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3496.1195ms 200 application/json; charset=utf-8
+2019-07-10 16:26:48.7621|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001  
+2019-07-10 16:26:48.8065|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 16:26:48.8201|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 16:26:50.9593|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 16:26:51.7647|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 16:26:51.7802|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 16:28:45.7423|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57900/  0
+2019-07-10 16:28:45.7423|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/  
+2019-07-10 16:28:45.8956|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 160.9538ms 200 
+2019-07-10 16:28:46.0873|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller MobileConfigServices.Controllers.DefaultController (MobileConfigServices).
+2019-07-10 16:28:46.1134|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) - Validation state: Valid
+2019-07-10 16:28:46.1300|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.3632ms.
+2019-07-10 16:28:46.1501|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2019-07-10 16:28:46.1620|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) in 60.8894ms
+2019-07-10 16:28:46.1839|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 444.698ms 200 text/plain; charset=utf-8
+2019-07-10 16:28:52.2726|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001  
+2019-07-10 16:28:52.2916|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 16:28:52.4208|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 16:28:55.7893|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 16:28:56.0909|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 16:28:56.2792|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 16:28:56.3646|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3938.154ms.
+2019-07-10 16:28:56.3646|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'MobileConfigServices.Models.ResponseDto`1[[System.Collections.Generic.List`1[[MobileConfigServices.Models.LocationDto, MobileConfigServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-07-10 16:28:56.4352|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 4135.4402ms
+2019-07-10 16:28:56.4463|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4172.2634ms 200 application/json; charset=utf-8
+2019-07-10 16:31:30.9141|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57900/  0
+2019-07-10 16:31:30.9141|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/  
+2019-07-10 16:31:31.0356|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 128.1095ms 200 
+2019-07-10 16:31:31.2048|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller MobileConfigServices.Controllers.DefaultController (MobileConfigServices).
+2019-07-10 16:31:31.2376|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) - Validation state: Valid
+2019-07-10 16:31:31.2556|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.3923ms.
+2019-07-10 16:31:31.2757|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2019-07-10 16:31:31.2909|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) in 71.3208ms
+2019-07-10 16:31:31.3127|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 399.5311ms 200 text/plain; charset=utf-8
+2019-07-10 16:31:36.5636|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/0001  
+2019-07-10 16:31:36.5858|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 16:31:36.7203|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 16:31:39.1054|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 16:31:39.4257|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 16:31:39.6390|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 16:31:39.7439|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3017.8944ms.
+2019-07-10 16:31:39.7641|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'MobileConfigServices.Models.ResponseDto`1[[System.Collections.Generic.List`1[[MobileConfigServices.Models.LocationDto, MobileConfigServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-07-10 16:31:39.8320|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 3238.4398ms
+2019-07-10 16:31:39.8432|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3280.4231ms 200 application/json; charset=utf-8
+2019-07-10 16:31:49.9186|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/1  
+2019-07-10 16:31:49.9186|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 16:31:49.9430|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 16:31:51.8330|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 16:31:51.8491|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 16:31:51.8602|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 16:31:51.8602|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1914.8364ms.
+2019-07-10 16:31:51.8734|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'MobileConfigServices.Models.ResponseDto`1[[System.Collections.Generic.List`1[[MobileConfigServices.Models.LocationDto, MobileConfigServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-07-10 16:31:51.8734|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 1938.0956ms
+2019-07-10 16:31:51.8939|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1971.4541ms 200 application/json; charset=utf-8
+2019-07-10 16:33:36.0583|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/  
+2019-07-10 16:33:36.0583|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57900/  0
+2019-07-10 16:33:36.0583|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/1  
+2019-07-10 16:33:36.1902|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 144.2098ms 200 
+2019-07-10 16:33:36.4033|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller MobileConfigServices.Controllers.DefaultController (MobileConfigServices).
+2019-07-10 16:33:36.4179|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 16:33:36.4378|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) - Validation state: Valid
+2019-07-10 16:33:36.4623|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.4912ms.
+2019-07-10 16:33:36.4925|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2019-07-10 16:33:36.5224|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) in 88.2034ms
+2019-07-10 16:33:36.5761|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 501.3638ms 200 text/plain; charset=utf-8
+2019-07-10 16:33:36.6552|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 16:33:39.6031|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 16:33:39.8710|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 16:33:40.0689|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 16:33:40.1205|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3452.6158ms.
+2019-07-10 16:33:40.1336|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'MobileConfigServices.Models.ResponseDto`1[[System.Collections.Generic.List`1[[MobileConfigServices.Models.LocationDto, MobileConfigServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-07-10 16:33:40.1836|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 3753.934ms
+2019-07-10 16:33:40.1941|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4151.6462ms 200 application/json; charset=utf-8
+2019-07-10 16:34:00.2799|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/1  
+2019-07-10 16:34:00.2936|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 16:34:00.3075|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 16:34:02.0057|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 16:34:02.7895|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 16:34:02.8019|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 16:35:22.3981|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/  
+2019-07-10 16:35:22.3981|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57900/  0
+2019-07-10 16:35:22.5442|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 150.8396ms 200 
+2019-07-10 16:35:22.7140|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller MobileConfigServices.Controllers.DefaultController (MobileConfigServices).
+2019-07-10 16:35:22.7385|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) - Validation state: Valid
+2019-07-10 16:35:22.7527|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.3406ms.
+2019-07-10 16:35:22.7721|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2019-07-10 16:35:22.7844|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.DefaultController.Get (MobileConfigServices) in 56.0133ms
+2019-07-10 16:35:22.7844|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 413.0452ms 200 text/plain; charset=utf-8
+2019-07-10 16:35:28.0466|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:57900/api/location/1  
+2019-07-10 16:35:28.0685|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetLocation", controller = "Locations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLocation(System.String, System.String) on controller MobileConfigServices.Controllers.LocationsController (MobileConfigServices).
+2019-07-10 16:35:28.2001|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) - Validation state: Valid
+2019-07-10 16:35:30.2622|INFO|MobileConfigServices.Controllers.LocationsController|GetLocation()is called
+2019-07-10 16:35:30.5105|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'RoutebookPTContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-07-10 16:35:30.7043|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (12ms) [Parameters=[@__locationNumber_0='?' (Size = 4) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[locationId], [c].[active], [c].[appId], [c].[locationNumber], [c].[updatedDate]
+FROM [cfgLocation] AS [c]
+WHERE [c].[locationNumber] = @__locationNumber_0
+2019-07-10 16:35:30.7262|INFO|MobileConfigServices.Controllers.LocationsController|Location 1 was not found.
+2019-07-10 16:35:30.7262|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 2529.9844ms.
+2019-07-10 16:35:30.7449|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'MobileConfigServices.Models.ResponseDto`1[[MobileConfigServices.Models.LocationDto, MobileConfigServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-10 16:35:30.8012|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action MobileConfigServices.Controllers.LocationsController.GetLocation (MobileConfigServices) in 2725.2099ms
+2019-07-10 16:35:30.8012|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2765.7677ms 404 application/json; charset=utf-8

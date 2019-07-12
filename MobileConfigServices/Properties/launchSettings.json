@@ -1,0 +1,38 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:57900",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "connectionStrings:RoutebookPTConnection": "Data Source=cdmassql51;Initial Catalog=RoutebookPT;Persist Security Info=True;User ID=RoutebookRw;Password=Spring13",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "MobileConfigServices": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    },
+    "Azure Dev Spaces": {
+      "commandName": "AzureDevSpaces",
+      "launchBrowser": true
+    },
+    "PROD": {
+      "commandName": "Executable",
+      "environmentVariables": {
+        "Key": "Value"
+      }
+    }
+  }
+}

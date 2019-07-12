@@ -1,0 +1,15 @@
+C:\Users\stentzk\source\repos\MobileConfigServices\MobileConfigServices\bin\Release\netcoreapp2.1\MobileConfigServices.deps.json
+C:\Users\stentzk\source\repos\MobileConfigServices\MobileConfigServices\bin\Release\netcoreapp2.1\MobileConfigServices.runtimeconfig.json
+C:\Users\stentzk\source\repos\MobileConfigServices\MobileConfigServices\bin\Release\netcoreapp2.1\MobileConfigServices.runtimeconfig.dev.json
+C:\Users\stentzk\source\repos\MobileConfigServices\MobileConfigServices\bin\Release\netcoreapp2.1\MobileConfigServices.dll
+C:\Users\stentzk\source\repos\MobileConfigServices\MobileConfigServices\bin\Release\netcoreapp2.1\MobileConfigServices.pdb
+C:\Users\stentzk\source\repos\MobileConfigServices\MobileConfigServices\obj\Release\netcoreapp2.1\MobileConfigServices.csproj.CoreCompileInputs.cache
+C:\Users\stentzk\source\repos\MobileConfigServices\MobileConfigServices\obj\Release\netcoreapp2.1\MobileConfigServices.RazorAssemblyInfo.cache
+C:\Users\stentzk\source\repos\MobileConfigServices\MobileConfigServices\obj\Release\netcoreapp2.1\MobileConfigServices.RazorAssemblyInfo.cs
+C:\Users\stentzk\source\repos\MobileConfigServices\MobileConfigServices\obj\Release\netcoreapp2.1\MobileConfigServices.AssemblyInfoInputs.cache
+C:\Users\stentzk\source\repos\MobileConfigServices\MobileConfigServices\obj\Release\netcoreapp2.1\MobileConfigServices.AssemblyInfo.cs
+C:\Users\stentzk\source\repos\MobileConfigServices\MobileConfigServices\obj\Release\netcoreapp2.1\MobileConfigServices.RazorTargetAssemblyInfo.cache
+C:\Users\stentzk\source\repos\MobileConfigServices\MobileConfigServices\obj\Release\netcoreapp2.1\MobileConfigServices.dll
+C:\Users\stentzk\source\repos\MobileConfigServices\MobileConfigServices\obj\Release\netcoreapp2.1\MobileConfigServices.pdb
+C:\Users\stentzk\source\repos\MobileConfigServices\MobileConfigServices\obj\Release\netcoreapp2.1\MobileConfigServices.csprojAssemblyReference.cache
+C:\Users\stentzk\source\repos\MobileConfigServices\MobileConfigServices\bin\Release\netcoreapp2.1\nlog.config
